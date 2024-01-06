@@ -1,0 +1,29 @@
+---
+import MySwiper from "../components/MySwiper.jsx";
+---
+
+<section class="relative bg-cover bg-center bg-no-repeat">
+    <MySwiper client:visible />
+    <div
+        class="absolute z-0 bottom-0 top-0 w-full h-full
+    bg-gradient-to-l from-transparent from-10% via-black/40 to-black/70"
+    >
+    </div>
+
+    <div
+        class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+    >
+        <div class="max-w-xl text-left">
+            <h1 class="text-3xl font-extrabold sm:text-5xl">
+                Tus partidas de <strong>Rol</strong>
+                <br />
+                a otro nivel con ayuda de la <strong>IA.</strong>
+            </h1>
+
+            <p class="mt-4 max-w-lg sm:text-xl/relaxed">
+                Creamos tu proxima aventura de rol con ayuda de la inteligencia
+                artificial.
+            </p>
+        </div>
+    </div>
+</section>
