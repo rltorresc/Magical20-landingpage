@@ -3,76 +3,73 @@ import BentoItem from "./BentoItem.astro";
 ---
 
 <section
-    class={`
+  class={`
     w-full max-w-[1400px]
     grid lg:grid-cols-10 auto-rows-[30rem] gap-4
-    mx-auto p-6 md:p-20 lg:p-20
+    mx-auto p-6 md:p-12 lg:p-20
     `}
 >
-    <BentoItem class="col-span-10 md:col-span-6" title="Habla con personajes">
-        <div
-            slot="image"
-            class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
-            style="background-image: url('/mireina.webp')"
-        >
-        </div>
-        <p slot="content" class="max-w-xl">
-            Nuestra avanzada IA permite una inmersión completa, facilitando <strong
-                >conversaciones en tiempo real con personajes de la trama.</strong
-            > Descubre secretos, negocia alianzas y toma decisiones cruciales
-            interactuando como si estuvieran físicamente presentes contigo.
-            Ahora el rol cobra más importancia, bienvenido a la nueva era del
-            rol.
-        </p>
-    </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-4" title="Construye aventuras">
-        <div
-            slot="image"
-            class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
-            style="background-image: url('/libro_2.webp')"
-        >
-        </div>
-        <p slot="content" class="max-w-xl">
-            El arte de contar historias se lleva a un nivel completamente nuevo.
-            Magical20 no solo es una herramienta, sino <strong
-                >tu compañero escritor.</strong
-            >
-             Ayuda a moldear aventuras épicas, construir narrativas envolventes
-            y añadir giros inesperados que mantendrán a tus jugadores al borde
-            de sus asientos.
-        </p>
-    </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-4" title="Genera imágenes">
-        <div
-            slot="image"
-            class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
-            style="background-image: url('/hotel.webp')"
-        >
-        </div>
-        <p slot="content" class="max-w-xl">
-            Sea un paisaje impresionante, un dragón majestuoso o una ciudad
-            bulliciosa, Magical20 <strong
-                >genera ilustraciones detalladas en cuestión de segundos.</strong
-            >
-             Visualiza tu mundo, dale vida a tus historias y sumerge a tus
-            jugadores en una experiencia visual inigualable.
-        </p>
-    </BentoItem>
-    <BentoItem class="col-span-10 md:col-span-6" title="Crea a tu antojo">
-        <div
-            slot="image"
-            class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
-            style="background-image: url('/addisen.webp')"
-        >
-        </div>
-        <p slot="content" class="max-w-xl">
-            <strong>Si puedes soñarlo, puedes crearlo.</strong>
-             Genera desde valientes héroes con <strong
-                >transfondos detallados</strong
-            > hasta monstruos aterradores con habilidades únicas y tesoros
-            ocultos que esperan ser descubiertos. Magical20 proporciona detalles
-            ricos, personalizados y coherentes con el universo que estás
-            creando, garantizando que cada elemento se sienta auténtico y vivo.
-        </p>
-    </BentoItem>
+  <BentoItem class="col-span-10 md:col-span-6" title="Habla con personajes">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
+      style="background-image: url('/mireina.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      Nuestra avanzada IA permite una inmersión completa, facilitando <strong
+        >conversaciones en tiempo real con personajes de la trama.</strong
+      > Descubre secretos, negocia alianzas y toma decisiones cruciales interactuando
+      como si estuvieran físicamente presentes contigo. Ahora el rol cobra más importancia,
+      bienvenido a la nueva era del rol.
+    </p>
+  </BentoItem>
+  <BentoItem class="col-span-10 md:col-span-4" title="Construye aventuras">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
+      style="background-image: url('/libro_2.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      El arte de contar historias se lleva a un nivel completamente nuevo.
+      Magical20 no solo es una herramienta, sino <strong
+        >tu compañero escritor.</strong
+      >
+      Ayuda a moldear aventuras épicas, construir narrativas envolventes y añadir
+      giros inesperados que mantendrán a tus jugadores al borde de sus asientos.
+    </p>
+  </BentoItem>
+  <BentoItem class="col-span-10 md:col-span-4" title="Genera imágenes">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
+      style="background-image: url('/hotel.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      Sea un paisaje impresionante, un dragón majestuoso o una ciudad
+      bulliciosa, Magical20 <strong
+        >genera ilustraciones detalladas en cuestión de segundos.</strong
+      >
+      Visualiza tu mundo, dale vida a tus historias y sumerge a tus jugadores en
+      una experiencia visual inigualable.
+    </p>
+  </BentoItem>
+  <BentoItem class="col-span-10 md:col-span-6" title="Crea a tu antojo">
+    <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0 w-full h-full group-hover:scale-110 transition-scale duration-1000 ease-in-out opacity-90 bg-blend-luminosity bg-center bg-cover bg-no-repeat z-0"
+      style="background-image: url('/addisen.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-xl text-base md:text-lg">
+      <strong>Si puedes soñarlo, puedes crearlo.</strong>
+      Genera desde valientes héroes con <strong>transfondos detallados</strong> hasta
+      monstruos aterradores con habilidades únicas y tesoros ocultos que esperan
+      ser descubiertos. Magical20 proporciona detalles ricos, personalizados y coherentes
+      con el universo que estás creando, garantizando que cada elemento se sienta
+      auténtico y vivo.
+    </p>
+  </BentoItem>
 </section>
