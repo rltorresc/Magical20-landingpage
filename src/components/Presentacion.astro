@@ -1,5 +1,7 @@
 ---
 import MySwiper from "../components/MySwiper.jsx";
+import PlayBadge from "../components/PlayBadge.astro";
+import AppleBadge from "../components/AppleBadge.astro";
 ---
 
 <section
@@ -13,10 +15,10 @@ import MySwiper from "../components/MySwiper.jsx";
   </div>
 
   <div
-    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+    class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:px-8 lg:flex-col lg:justify-center"
   >
     <div class="max-w-xl text-left">
-      <h1 class="text-3xl font-extrabold sm:text-5xl">
+      <h1 class="text-3xl font-extrabold sm:text-4xl">
         Tus partidas de <strong>Rol</strong>
         <br />
         a otro nivel con ayuda de la <strong>IA.</strong>
@@ -26,6 +28,12 @@ import MySwiper from "../components/MySwiper.jsx";
         Creamos tu proxima aventura de rol con ayuda de la inteligencia
         artificial.
       </p>
+    </div>
+    <div
+      class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
+    >
+      <AppleBadge />
+      <PlayBadge />
     </div>
   </div>
 </section>

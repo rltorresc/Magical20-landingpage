@@ -7,6 +7,8 @@
 
 </div>
 
+![Imagen de portada](src/components/imagen_portada.png)
+
 ## 🛠️ Stack
 
 - [**Astro**](https://astro.build/) - The web framework for content-driven websites.
