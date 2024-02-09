@@ -7,7 +7,7 @@
 
 </div>
 
-![Imagen de portada](src/components/imagen_portada.png)
+![Imagen de portada](public/imagen_portada.png)
 
 ## 🛠️ Stack
 
