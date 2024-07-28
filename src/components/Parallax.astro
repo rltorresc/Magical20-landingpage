@@ -1,0 +1,51 @@
+---
+const images = [
+  { src: "/public/dungeon.webp", depth: 0.2, alt: "Fondo" },
+  { src: "/public/fog_1.webp", depth: 0.8, alt: "Frontal" },
+];
+---
+
+<div class="absolute top-0 left-0 w-full h-screen overflow-hidden -z-10">
+  {
+    images.map((image) => (
+      <div
+        class="absolute top-0 left-0 right-0 bottom-0 parallax__layer"
+        style={`transform: translateZ(${image.depth * -1}px) scale(${1 + image.depth});`}
+        data-depth={image.depth}
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          class={`w-full h-full object-cover ${
+            image.alt === "Frontal"
+              ? "custom-height opacity-80 scale-x-110"
+              : "object-center"
+          }`}
+          style="mask-image: linear-gradient(to bottom, black 80%, transparent);"
+        />
+      </div>
+    ))
+  }
+</div>
+
+<script>
+  function updateParallax() {
+    const top = window.scrollY;
+    const layers = document.querySelectorAll(".parallax__layer");
+    layers.forEach((layer) => {
+      const depth = (layer as HTMLElement).dataset.depth;
+      const movement = -(top * Number(depth));
+      const translate = `translate3d(0, ${movement}px, 0)`;
+      (layer as HTMLElement).style.transform = translate;
+    });
+  }
+
+  window.addEventListener("scroll", updateParallax);
+  window.addEventListener("load", updateParallax);
+</script>
+
+<style>
+  .custom-height {
+    height: 140vh; /* Ajusta este valor según necesites */
+  }
+</style>

@@ -1,17 +1,16 @@
 ---
-import MySwiper from "../components/MySwiper.jsx";
+import Parallax from "./Parallax.astro";
 import PlayBadge from "../components/PlayBadge.astro";
 import AppleBadge from "../components/AppleBadge.astro";
 import LogoTitle from "./LogoTitle.astro";
 ---
 
 <section
-  class="relative bg-cover bg-center bg-no-repeatrelative h-dvh w-full max-w-[100vw] md:aspect-video md:h-[80vh] xl:h-full"
+  class="relative bg-cover bg-center bg-no-repeat h-dvh w-full max-w-[100vw] md:aspect-video md:h-[80vh] xl:h-full"
 >
-  <MySwiper client:visible />
+  <Parallax />
   <div
-    class="absolute z-0 bottom-0 top-0 w-full h-full
-    bg-gradient-to-l from-transparent from-10% via-black/40 to-black/70"
+    class="absolute inset-0 w-full h-full bg-gradient-to-l from-transparent via-black/40 to-black/70"
   >
   </div>
 
@@ -27,8 +26,8 @@ import LogoTitle from "./LogoTitle.astro";
         a otro nivel con ayuda de la <strong>IA.</strong>
       </h1>
 
-      <p class="mt-4 max-w-lg sm:text-xl/relaxed">
-        Creamos tu proxima aventura de rol con ayuda de la inteligencia
+      <p class="mt-4 max-w-lg sm:text-xl">
+        Creamos tu próxima aventura de rol con ayuda de la inteligencia
         artificial.
       </p>
     </div>
