@@ -14,7 +14,6 @@
 - [**Astro**](https://astro.build/) - The web framework for content-driven websites.
 - [**Typescript**](https://www.typescriptlang.org/) - JavaScript with syntax for types.
 - [**Tailwindcss**](https://tailwindcss.com/) - A utility-first CSS framework for rapidly building custom designs.
-- [**Swiper**](https://github.com/nolimits4web/swiper) - Most modern mobile touch slider with hardware accelerated transitions.
 - [**fontsource**](https://fontsource.org/) - Self-host Open Source fonts in neatly bundled NPM packages.
 
 ## 🚀 Getting started
